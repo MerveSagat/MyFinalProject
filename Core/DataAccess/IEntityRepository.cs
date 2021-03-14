@@ -1,10 +1,10 @@
-﻿using Entities.Abstract;
+﻿using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace DataAccess.Abstract
+namespace Core.DataAccess
 {
     //modelden data access object oluştururken, her bir model için ayrı bir dal oluşturmamak için bir tane generic oluşturuyoruz. O da bu interface oluyor.
     //burada T tipinde herhangi bir değer gelirse ona göre şekillendireceğiz dedik ama her türlü verinin gelmesini istemediğimiz için constraint oluşturuyoruz.

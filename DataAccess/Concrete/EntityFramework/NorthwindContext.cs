@@ -17,11 +17,12 @@ namespace DataAccess.Concrete.EntityFramework
         {
             //optionsBuilder.UseSqlServer(@"Server=175.45.2.12");//burada sql server a nasıl bağlanacağını belirtiyoruz.//başa @ işareti koymak, içeride kullanacağımız her slash işaretini normal slash olarak algıla demektir.
             //normal geliştirme ortamında bu şekilde ip vererek db ye bağlanacağı bir connection stringi yazılır. ama biz bu projede development ortamında çalışacağımız için farklı şekilde kullanıyoruz.
-            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Northwind;Trusted_Connection=true"); //bu ismi view/sql server object explorer ı açarak orada yazan ismi yazıyoruz
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-A08LQHN\SQLEXPRESS;Database=Northwind;Trusted_Connection=true"); //bu ismi view/sql server object explorer ı açarak orada yazan ismi yazıyoruz
         }
         public DbSet<Product> Products { get; set; } //buralarda hangi tabloya hangi classın karşılık geleceğini yazıyoruz. İlk sırada dbSet in içinde olan class adı, 2.sıradaki db deki tablo adı
         public DbSet<Category> Categories { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
     }
 }

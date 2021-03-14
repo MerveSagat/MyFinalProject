@@ -9,13 +9,29 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
+            //ProductTest();
+            CategoryTest();
+
+        }
+
+        private static void CategoryTest()
+        {
+            CategoryManager categoryManager = new CategoryManager(new EFCategoryDal());
+            foreach (var category in categoryManager.GetAll())
+            {
+                Console.WriteLine(category.CategoryName);
+            }
+        }
+
+        private static void ProductTest()
+        {
+            //satırları seçip sağ tıkladık, Quick Actions an refactoring den refactor işlemi yaptık. Extract Method dedik. Bizim yerimize bu seçtiğimiz satırları ayrı bir method içine koydu.
             ProductManager productManager = new ProductManager(new EFProductDal());
 
             foreach (var product in productManager.GetAllByCategoryId(2))
             {
                 Console.WriteLine(product.ProductName);
             }
-            
         }
     }
 }

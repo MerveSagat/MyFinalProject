@@ -1,0 +1,9 @@
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\bin\Debug\netstandard2.1\Core.deps.json
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\bin\Debug\netstandard2.1\Core.dll
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\bin\Debug\netstandard2.1\Core.pdb
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\obj\Debug\netstandard2.1\Core.csprojAssemblyReference.cache
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\obj\Debug\netstandard2.1\Core.AssemblyInfoInputs.cache
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\obj\Debug\netstandard2.1\Core.AssemblyInfo.cs
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\obj\Debug\netstandard2.1\Core.csproj.CoreCompileInputs.cache
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\obj\Debug\netstandard2.1\Core.dll
+C:\Users\MerveSagat\source\repos\MyFinalProject\Core\obj\Debug\netstandard2.1\Core.pdb
