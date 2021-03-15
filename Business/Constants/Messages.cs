@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -10,5 +11,7 @@ namespace Business.Constants
         //publicler PascalCase yazılır. Yani büyük harfle başlar. Eğer bunlar private olsaydı camelcase yazacaktık.
         public static string ProductAdded = "Ürün eklendi";
         public static string ProductNameInvalid = "Ürün ismi geçeriz";
+        public static string MaintenanceTime = "Sistem bakımda";
+        public static string ProductsListed = "Ürünler listelendi";
     }
 }
