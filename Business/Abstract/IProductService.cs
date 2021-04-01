@@ -17,5 +17,8 @@ namespace Business.Abstract
 
         //üsttekilerin hepsinde data olduğu için IDataResult yaptık, alttakinde voidde data olmadığı için onu IResult yaptık
         IResult Add(Product product);
+        IResult Update(Product product);
+        IResult AddTransactionalTest(Product product);
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
@@ -17,15 +18,15 @@ namespace Business.Concrete
         }
 
         //dış dünyaya servis etmek istediğimiz methodları interface vasıtasıyla buraya implemente ediyoruz
-        public List<Category> GetAll()
+        public IDataResult<List<Category>> GetAll()
         {
             //iş kodları
-            return _categoryDal.GetAll();
+            return new SuccessDataResult<List<Category>>(_categoryDal.GetAll());
         }
 
-        public Category GetById(int categoryId)
+        public IDataResult<Category> GetById(int categoryId)
         {
-            return _categoryDal.Get(c=>c.CategoryId == categoryId); //buradaki c yi categoryid olduğu için böyle verdik, rastgele bir ad kullanılabilir.Burası bir nevi where koşulu eklemiş oluyor
+            return new SuccessDataResult<Category>(_categoryDal.Get(c=>c.CategoryId == categoryId)); //buradaki c yi categoryid olduğu için böyle verdik, rastgele bir ad kullanılabilir.Burası bir nevi where koşulu eklemiş oluyor
         }
     }
 }
